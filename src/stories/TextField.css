@@ -1,0 +1,62 @@
+.textfield {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.textfield-label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.textfield-input {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+/* Variants */
+.outlined .textfield-input {
+  border: 1px solid #ccc;
+  background: transparent;
+}
+
+.outlined .textfield-input:focus {
+  border-color: #1ea7fd;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(30, 167, 253, 0.2);
+}
+
+.filled .textfield-input {
+  border: none;
+  background: #f5f5f5;
+  border-bottom: 2px solid #ccc;
+}
+
+.filled .textfield-input:focus {
+  background: #ebebeb;
+  border-bottom-color: #1ea7fd;
+  outline: none;
+}
+
+.standard .textfield-input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding: 10px 0;
+}
+
+.standard .textfield-input:focus {
+  border-bottom-color: #1ea7fd;
+  outline: none;
+}
+
+.textfield-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

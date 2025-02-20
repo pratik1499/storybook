@@ -1,0 +1,45 @@
+.badge-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.badge-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #ff4d4f;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+
+.badge-dot {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.badge-success {
+  background: #52c41a;
+}
+
+.badge-warning {
+  background: #faad14;
+}
+
+.badge-error {
+  background: #ff4d4f;
+}
+
+.badge-default {
+  background: #d9d9d9;
+}
