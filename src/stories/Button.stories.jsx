@@ -1,6 +1,7 @@
 import { Button } from "../components/Button";
 import { expect } from "@storybook/jest";
 import { within, userEvent } from "@storybook/testing-library";
+import { fn } from "@storybook/test";
 
 export default {
   title: "Components/Button",
@@ -19,6 +20,7 @@ export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: "Click Me",
+  onClick: fn(),
 };
 Primary.play = async ({ args, canvasElement }) => {
   const canvas = within(canvasElement);
