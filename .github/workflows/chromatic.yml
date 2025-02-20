@@ -1,6 +1,6 @@
 name: "Chromatic Deployment"
 
-on: push
+on: workflow_dispatch
 
 jobs:
   chromatic-deployment:
