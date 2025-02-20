@@ -1,6 +1,7 @@
 name: "Chromatic Deployment"
 
-on: workflow_dispatch
+on: push
+# on: workflow_dispatch Enble this manual deployment
 
 jobs:
   chromatic-deployment:
